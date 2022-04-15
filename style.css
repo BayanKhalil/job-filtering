@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline:0;
+    box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif; 
+}
+body{
+    margin:0 auto;
+    background-color: hsl(180, 52%, 96%);
+   
+}
+@media(min-width:800px){
+    header{
+        background-color:  hsl(180, 29%, 50%);
+        background-size: cover;
+        height: 156px;
+        width: 100%;
+
+       
+    }
+    header img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    .container{
+      margin: 5rem auto;
+      width: 80vw;
+    }
+  
+    .array {
+      
+      display: flex;
+      flex-direction: row;
+
+        background-color: #fff;
+        margin-bottom: 2rem;
+        border: 1px solid #fff;
+        box-shadow: 2px 2px 2px 1px rgba(129, 127, 127, 0.2) ;
+        padding: 40px;
+        border-radius: 5px;
+        line-height: 1.5rem;
+        margin: -3rem 11.4rem;
+        width: 80vw;
+        position: absolute;
+        
+    }
+    .hide {
+        display: none;
+      }
+    .array button{
+        background-color: hsl(180, 52%, 96%);
+        color: hsl(180, 8%, 52%);
+        float: left;
+        padding:10px;
+        border-radius: 5px;
+        padding-right: 3 rem;
+        margin-right: .5rem;
+        border-color: hsl(180, 8%, 52%);
+        border: none;
+
+        
+    }
+    .array button .span{
+        background-color: #fff;
+        padding: 10px 3px 10px;
+    }
+    .array button .clearThis:hover{
+        background-color: #000;
+        color: #fff;
+        padding:9px;
+    }
+    .array .clear{
+        float: right;
+    }
+
+    
+     .content{
+        display: flex;
+        flex-direction: row;
+        background-color: #fff;
+        justify-content: space-evenly;
+        margin-bottom: 2rem;
+        border: 1px solid #fff;
+        box-shadow: 2px 2px 2px 1px rgba(129, 127, 127, 0.2) ;
+        padding: 10px;
+        border-radius: 5px;
+        line-height: 1.5rem;
+
+    
+    }
+    
+    .img{
+        padding-right:2rem;
+    }
+    .img-detail{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+       
+    }
+    .job-avaliable{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 7px;
+    }
+    
+    .job-avaliable h6{
+        color: hsl(180, 8%, 52%);
+        margin-top: 3px;
+        margin-right: 1rem;
+        font-size: 1rem;
+    }
+    .job-avaliable .new{
+        background-color: hsl(180, 8%, 52%);
+        color: #fff;
+        padding:3px;
+        border-radius: 10px;
+        margin-right: 1rem;
+    
+    
+    }
+    .job-avaliable .featured{
+        background-color: #000;
+        color: #fff;
+        padding:3px;
+        border-radius: 10px;
+    
+    
+    }
+    .job-detail{
+        display: flex;
+        flex-direction: row;
+        justify-items: baseline;
+        justify-content: space-between;
+        color: hsl(180, 8%, 52%);
+        padding-top: 7px;
+       width: 100%;
+    }
+    
+    .bySearch{
+        display: flex;
+        flex-direction: row;
+         width: 50%;
+        padding-top: 1.5rem;
+        margin-left: 5rem;
+        flex-wrap: wrap;
+
+        
+    }
+    
+    .bySearch button{
+        background-color: hsl(180, 52%, 96%);
+        color: hsl(180, 8%, 52%);
+        height: fit-content;
+        padding:7px;
+        border-radius: 10px;
+        padding-right: 5 rem;
+        margin-right: 1rem;
+        border-color: hsl(180, 8%, 52%);
+        border: none;
+
+        
+    
+    }
+    .bySearch button:hover{
+        background-color: hsl(180, 8%, 52%);
+        color:#fff;
+        
+    
+    }
+    
+    .bySearch .active{
+        background-color: #999;
+    }
+    hr{
+        visibility: hidden;
+    }
+
+
+   
+}
+
+
+@media (max-width:800px) {
+   
+   body{
+    margin:0 auto;
+    background-color: hsl(180, 52%, 96%);
+   }
+
+    header{
+        background-color:  hsl(180, 29%, 50%);
+        background-image: url(./images/bg-header-mobile.svg);
+        height: 156px;
+        width: 100%;
+
+       
+    }
+    header img{
+        width: 100%;
+        height: 100%;
+    }
+    
+
+    .container{
+        margin: 1rem auto;
+        width: 80%;
+    }
+
+      
+    .content{
+       display: flex;
+       flex-direction: column;
+       background-color: #fff;
+       justify-content: space-evenly;
+       margin-top: 5rem;
+       border: 1px solid #fff;
+       box-shadow: 2px 2px 2px 1px rgba(129, 127, 127, 0.2) ;
+       padding: 10px;
+       border-radius: 5px;
+       line-height: 2rem;
+       position: relative;
+       
+
+    }
+
+
+    .img{
+      
+        padding-right:2rem;
+        margin-bottom: 3rem;
+        position: absolute;
+        top: -40px;
+    }
+     
+    .img-detail{
+        display: flex;
+        flex-direction: column;
+        margin-right: 38rem;
+        width: 100vw;
+        margin-left: 1rem;
+        margin-top: 3rem;
+        
+       
+    }
+    .job-avaliable{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 7px;
+
+        
+    }
+    
+    .job-avaliable h6{
+        color: hsl(180, 8%, 52%);
+        margin-top: 3px;
+        margin-right: 1rem;
+        font-size: 1rem;
+    }
+    .job-avaliable .new{
+        background-color: hsl(180, 8%, 52%);
+        color: #fff;
+        padding:.75px 7px .75px 7px;
+        border-radius: 40%;
+        margin-right: 1rem;
+       font-size: 0.75em;
+    
+    }
+    .job-avaliable .featured{
+        background-color: #000;
+        color: #fff;
+        padding:.75px 7px .75px 7px;
+        border-radius: 40%;
+        font-size: 0.75em;
+
+    
+    }
+    .job-detail{
+        display: flex;
+        flex-direction: row;
+        justify-items: baseline;
+        justify-content: space-between;
+        color: hsl(180, 8%, 52%);
+        padding-top: 7px;
+       width: 100%;
+    }
+    hr{
+        margin: 1rem;
+        background-color: hsl(180, 8%, 52%);
+        height: 1px;
+        border: none;
+
+    }
+    .bySearch{
+        display: flex;
+        flex-wrap: wrap;
+         width:80%;
+        padding-top: 1.5rem;
+        margin-left: 1rem;
+        padding-bottom :1.5rem ;
+        
+    }
+    .bySearch button{
+        background-color: hsl(180, 52%, 96%);
+        color: hsl(180, 8%, 52%);
+        padding:7px;
+        border-radius: 10px;
+        padding-right: 5 rem;
+        margin-right: 1rem;
+        margin-bottom: .5rem;
+      
+        border: none;
+
+        
+    
+    }
+    .bySearch button:hover{
+        background-color: hsl(180, 8%, 52%);
+        color:#fff;
+        
+    
+    }
+
+    .array {
+      
+        background-color: #fff;
+        border: 1px solid #fff;
+        box-shadow: 2px 2px 2px 1px rgba(129, 127, 127, 0.2) ;
+        padding: 20px;
+        border-radius: 5px;
+        margin: -3rem 4rem;
+        width: 80%;
+        position: absolute;
+        
+    }
+
+    .hide {
+        display: none;
+      }
+    .array button{
+        background-color: hsl(180, 52%, 96%);
+        color: hsl(180, 8%, 52%);
+        height: fit-content;
+        padding:10px;
+        border-radius: 5px;
+        padding-right: 3 rem;
+        margin-right: .2rem;
+        border-color: hsl(180, 8%, 52%);
+        border: none;
+
+    }
+    .array .clear{
+        background-color: hsl(180, 8%, 52%);
+        color:#fff;
+        border-radius: 0px;
+        padding:8px;
+    }
+    .array .clear:hover{
+        background-color: hsl(0, 0%, 0%);
+        color:#fff;
+        border-radius: 0px;
+    }
+    .array button{
+        background-color: hsl(180, 52%, 96%);
+        color: hsl(180, 8%, 52%);
+        float: left;
+        padding:10px;
+
+        border-radius: 5px;
+        padding-right: 3 rem;
+        margin-right: .5rem;
+        border-color: hsl(180, 8%, 52%);
+        border: none;
+
+        
+    }
+    .array button .span{
+        background-color: #fff;
+        padding: 10px 3px 10px;
+    }
+    .array button .clearThis:hover{
+        background-color: #000;
+        color: #fff;
+        padding:9px;
+    }
+    .array .clear{
+        float: right;
+    }
+
+   
+    
+}
