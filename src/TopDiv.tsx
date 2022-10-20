@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import{TopArray,Button,Div} from './components/Card'
 import { cards } from "./data/data";
 
@@ -26,7 +26,7 @@ const TopDiv = (Props: TopDivProps) => {
   const filterSelectedItem= (index: number) => {
     
     const filteredArray = Props.selectedTags.filter((item,ind) => {
-      return ind != index
+      return ind !== index
       
     });
     Props.setSelectedTags(Array.from(new Set(filteredArray)));

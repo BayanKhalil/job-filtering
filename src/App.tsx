@@ -89,8 +89,8 @@ const App: React.FC = () => {
                 <JobDescription>
                   <JobAvaliable>
                     <Company>{item.company}</Company>
-                    {item.fnew == "NEW!" ? <Type type='new'>{item.fnew}</Type> : ""}
-                    {item.featured=="FEATURED"? <Type type='featured'>{item.featured}</Type>:""}
+                    {item.fnew === "NEW!" ? <Type type='new'>{item.fnew}</Type> : ""}
+                    {item.featured==="FEATURED"? <Type type='featured'>{item.featured}</Type>:""}
 
                    
                   </JobAvaliable>
